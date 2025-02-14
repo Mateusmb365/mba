@@ -1,0 +1,133 @@
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  } 
+  body{
+   height: 500vh;
+   
+  }
+
+ header{
+    width: 100%;
+    
+    height:150px;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 10px;
+    left: 0;
+    border-radius: 30px;
+   
+   
+ 
+ }
+ .logo{
+  
+    width: 80px;
+    height: 50px;
+ }
+ header ul{
+    display: flex;
+   justify-content: center;
+   align-items: center;
+   list-style: none;
+   gap: 20px;
+   margin: 0 6px;
+ }
+
+ .nav-menu{
+    color: white;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+   background-color: black;
+    padding: 10px 20px;
+    border-radius: 10px;
+    text-decoration: none;
+
+
+ }
+ .nav-menu:hover{
+    background-color: rgba(17, 2, 2, 0.568);
+   
+ }
+ .title-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 20px;
+   font-family: Arial, Helvetica, sans-serif;
+ }
+ .title-dev{
+   
+    font-size: 50px;
+    font-weight: bold;
+   
+ }
+ .title-dev::after{
+    content: " 👉🏼";
+ }
+
+ #app{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 20px;
+    height: 100vh;
+    margin-top: 200px;
+    
+  
+ }
+ .img-back{
+    width: 400px;
+    height: 500px;
+    border-radius: 30px;
+ }
+ .carrossel-container{
+   position: relative;
+   max-width: 600px;
+   margin: 40px auto;
+   overflow: hidden;
+   border: solid 2px #ddd;
+   border-radius: 10px;
+    
+ }
+ .carrossel{
+   display: flex;
+  transition: transform 0.5s ease-in-out;
+  
+    
+ }
+ .carrossel-itens{
+   min-width: 100%;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   padding: 20px;
+   border: solid 2px #ddd;
+   
+ }
+ .img-itens{
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+    
+ }
+.prev-btn{
+   position: absolute;
+   top: 50%;
+   left: 10px;
+   transform: translateY(-50%);
+   font-size: 24px;
+   cursor: pointer;
+}
+.next-btn{
+   position: absolute;
+   top: 50%;
+   right: 10px;
+   transform: translateY(-50%);
+   font-size: 24px;
+   cursor: pointer;
+}
