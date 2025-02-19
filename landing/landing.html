@@ -18,21 +18,25 @@
 <body>
     <header>
        
-        <div>
-            
-            <ul class="animate__swing">
-                <img class="logo" src="../landing/icons/img/MB.png.png" alt="">
+        <div class="menu">
+           
+            <ul >
+               
 
                 <li ><a class = "nav-menu" href="#Home">Home</a> </li>
                 <li  ><a class = "nav-menu" href="#Serviços">Serviços</a> </li>
-                <li ><a class = "nav-menu" href="#">Contato</a> </li>
+                <li ><a class = "nav-menu" href="#Contato">Contato</a> </li>
                 <li ><a class = "nav-menu" href="#">Sobre</a> </li>
+                <img class="logo" src="../landing/icons/img/MB.png.png" alt="">
 
+
+
+               
             </ul>
-
+         
         </div>
     </header>
-    <h1 class="animate__animated animate__bounce">An animated element</h1>
+  
 
     <div id="app" id ="Home">
        <div class="title-container"> 
@@ -88,10 +92,21 @@
     <button class="next-btn">&#10095;</button>
 </div>
 
-<div id="Contato">
-    <form action="">
-        <label for="nome">Digite seu nome</label><br>
-        <input type="text" placeholder="Digite seu nome" required>
+<div id="Contato" class="contato">
+
+    <h1>Contato</h1>
+
+    <form action="" class="contato-form">
+        <label class="label-form" for="nome">Digite seu nome</label>
+        <input class="input-form" type="text" placeholder="Digite seu nome" required>
+
+        <label class="label-form" for="telefone">Digite seu Contato</label>
+        <input class="input-form" type="number" placeholder="Digite seu contato" required>
+
+        <label class="label-form" for="email">Digite seu email</label>
+        <input class="input-form" type="email" placeholder="Digite seu email" required>
+
+        <input class="btn-form" type="submit" value="Enviar">
     </form>
 </div>
    
