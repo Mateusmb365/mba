@@ -5,9 +5,10 @@
     box-sizing: border-box;
   } 
   body{
-   height: 500vh;
-   
+    font-family: Arial, Helvetica, sans-serif;
+   gap: 100px;
   }
+
 
  header{
    display: flex;
@@ -58,13 +59,13 @@
  }
  .title-container{
     display: flex;
+    align-items: center;
     flex-direction: column;
-    justify-content: flex-start;
-    gap: 20px;
+    gap: 50px;
    font-family: Arial, Helvetica, sans-serif;
  }
  .title-dev{
-   
+   top: 0px;
     font-size: 50px;
     font-weight: bold;
    
@@ -73,37 +74,39 @@
     content: " 👉🏼";
  }
 
- #app{
+ #Home{
     display: flex;
-    justify-content: center;
-    flex-direction: row;
+   align-items: center;
     gap: 20px;
     height: 100vh;
-    margin-top: 200px;
+    padding-top: 100px;
     
   
  }
  .img-back{
-    width: 400px;
-    height: 500px;
+    width: 300px;
+    height: 300px;
     border-radius: 30px;
  }
- .carrossel-container{
-   
+ .carrossel-container {
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+   align-items: center;
    max-width: 600px;
    margin: 40px auto;
    overflow: hidden;
    border: solid 2px #ddd;
    border-radius: 10px;
-    
+   position: relative;
  }
- .carrossel{
+ 
+ .carrossel {
    display: flex;
-  transition: transform 0.5s ease-in-out;
-  
-    
+   transition: transform 0.5s ease-in-out;
  }
- .carrossel-itens{
+ 
+ .carrossel-itens {
    min-width: 100%;
    display: flex;
    flex-direction: column;
@@ -111,7 +114,6 @@
    align-items: center;
    padding: 20px;
    border: solid 2px #ddd;
-   
  }
  .img-itens{
     width: 150px;
@@ -119,25 +121,35 @@
     border-radius: 10px;
     
  }
-.prev-btn{
-   
-   
+ 
+
+.prev-btn, .next-btn {
+   position: absolute;
+   top: 50%;
+   transform: translateY(-50%);
+   background: rgba(0, 0, 0, 0.5);
+   color: #fff;
+   border: none;
+   padding: 10px;
+   cursor: pointer;
+ }
+ 
+ .prev-btn {
    left: 10px;
-   transform: translateY(-50%);
-   font-size: 24px;
-   cursor: pointer;
-}
-.next-btn{
-   
-   
+ }
+ 
+ .next-btn {
    right: 10px;
-   transform: translateY(-50%);
-   font-size: 24px;
-   cursor: pointer;
-}
+ }
+ #Contato{ margin-top: 100px;}
 .contato{
-   
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+   align-items: center;
+   gap: 20px;
    max-width: 600px;
+   
    margin: 40px auto;
    overflow: hidden;
    border: solid 2px #ddd;
@@ -157,12 +169,19 @@
    font-size: 20px;
    font-weight: bold;
 }
-input{
+.input-form{
+   
    width: 300px;
    height: 30px;
    border-radius: 10px;
    border: solid 2px #ddd;
    padding: 20px;}
+
+ .input-form:focus{
+   background-color: rgba(0, 128, 0, 0.336);
+   border-color: green;
+
+ }
 
 .btn-form{
    width: 100px;

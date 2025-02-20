@@ -3,8 +3,6 @@ const items = document.querySelectorAll('.carrossel-itens');
 const prevBtn = document.querySelector('.prev-btn');
 const nextBtn = document.querySelector('.next-btn');
 
-
-
 let currentIndex = 0;
 
 function updateCarrossel() {
@@ -34,7 +32,8 @@ function validateForm() {
     const name = document.getElementById("nome");
     const email = document.getElementById("email");
     const contato = document.getElementById("telefone");
-   
+
+    // Limpa as bordas antes da validação
     name.style.borderColor = "";
     email.style.borderColor = "";
     contato.style.borderColor = "";
@@ -43,25 +42,21 @@ function validateForm() {
 
     if (name.value.trim() === "") {
         name.style.borderColor = "red";
-        name.style.backgroundColor = "rgba(255, 0, 0, 0.36)";
         isValid = false;
     }
 
     if (email.value.trim() === "") {
         email.style.borderColor = "red";
-        email.style.backgroundColor = "rgba(255, 0, 0, 0.36)";
         isValid = false;
-
+        
     } else if (!isValidEmail(email.value)) {
         email.style.borderColor = "red";
-        email.style.backgroundColor = "rgba(255, 0, 0, 0.36)";
         alert("Por favor, insira um e-mail válido.");
         isValid = false;
     }
 
     if (contato.value.trim() === "") {
         contato.style.borderColor = "red";
-        contato.style.backgroundColor = "rgba(255, 0, 0, 0.36)";
         isValid = false;
     }
 
@@ -73,8 +68,8 @@ function validateForm() {
     return true;
 }
 
-
-    function isValidEmail(email) {
-        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-        return emailRegex.test(email);
-    }
+// Função auxiliar para validar o formato do e-mail
+function isValidEmail(email) {
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return emailRegex.test(email);
+}

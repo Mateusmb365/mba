@@ -40,43 +40,38 @@
 
     <div id="app" id ="Home">
        <div class="title-container"> 
+        <img class="img-back"  src="../landing/icons/img/backmb.png.jpg" alt="">
         <h1 class ="animate__heartBeat" class="title-dev">Mateus Developer <br> Transformando Ideias Em Codigos</h1>
         <p class="animate__headShake animate__delay-1s">Bem-vindo ao meu mundo de desenvolvimento, onde ideias ganham vida através de códigos! Sou Mateus, um apaixonado por tecnologia e inovação, dedicado a criar soluções digitais que unem funcionalidade, design e performance. Aqui, cada projeto é uma oportunidade de transformar
              desafios em resultados incríveis. Vamos construir algo incrível juntos? 💻✨
 
         </p>
         </div>
-        <img class="img-back"  src="../landing/icons/img/backmb.png.jpg" alt="">
-       
         </div>
 
 
     <div id="Serviços" class="carrossel-container"> 
         <h1 class="animate__animated animate__bounce">Linguagens e estilizações</h1>
+
+        
     <div class="carrossel">
 
        
 
-<section class="carrossel-itens">
+        <section class="carrossel-itens">
     
-    <img src="../landing/icons/img/html.jpg" class="img-itens" alt="linguagens ">
-
-    <h2>HTML (Linguagem de marcação de hipertexto)</h2>
-    <p>"ComoHTML é uma base sólida sobre uma construção de qualidade </p>
-
-    
-
-
+            <img src="../landing/icons/img/html.jpg" class="img-itens" alt="linguagens ">
+            <h2>HTML (Linguagem de marcação de hipertexto)</h2>
+            <p>"ComoHTML é uma base sólida sobre uma construção de qualidade </p>
 </section>
-<section class="carrossel-itens">
+        <section class="carrossel-itens">
      <img src="../landing/icons/img/css.jpg" class="img-itens" alt="linguagens ">
     <h2>CSS (Folhas de estilo em cascata)</h2>
     <p>CSS é onde a magia visual acontece. Minha expertise nessa linguagem permite que eu dê vida às interfaces
-
     </p>
 
 </section>
-<section class="carrossel-itens">
+    <section class="carrossel-itens">
 
      <img src="../landing/icons/img/js.jpg" class="img-itens" alt="linguagens ">
     <h2>JavaScript</h2>
@@ -84,13 +79,17 @@
 
     </p>
 
-
 </section>
-
 </div>
+<div>
     <button class="prev-btn">&#10094;</button>
     <button class="next-btn">&#10095;</button>
+  </div>
 </div>
+
+
+
+
 
 <div id="Contato" class="contato">
 
@@ -98,15 +97,15 @@
 
     <form action="" class="contato-form">
         <label class="label-form" for="nome">Digite seu nome</label>
-        <input class="input-form" type="text" placeholder="Digite seu nome" required>
+        <input class="input-form" id="nome" type="text" placeholder="Digite seu nome" required>
 
         <label class="label-form" for="telefone">Digite seu Contato</label>
-        <input class="input-form" type="number" placeholder="Digite seu contato" required>
+        <input class="input-form" id="telefone" type="tel" placeholder="Digite seu contato" required>
 
         <label class="label-form" for="email">Digite seu email</label>
-        <input class="input-form" type="email" placeholder="Digite seu email" required>
+        <input class="input-form" id="email" type="email" placeholder="Digite seu email" required>
 
-        <input class="btn-form" type="submit" value="Enviar">
+        <input onclick="validateForm()" class="btn-form" type="submit" value="Enviar">
     </form>
 </div>
    
