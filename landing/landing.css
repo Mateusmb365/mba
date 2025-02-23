@@ -103,7 +103,7 @@
  
  .carrossel {
    display: flex;
-   transition: transform 0.5s ease-in-out;
+   transition: transform 2s ease-in-out;
  }
  
  .carrossel-itens {
@@ -114,8 +114,9 @@
    align-items: center;
    padding: 20px;
    border: solid 2px #ddd;
+   transition: transform 4s ease;
  }
- .img-itens{
+ .img-itens1{
     width: 150px;
     height: 150px;
     border-radius: 10px;
@@ -190,3 +191,58 @@
    border: solid 2px #ddd;
    cursor: pointer;
 }
+.gallery-container{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   max-width: 600px;
+   max-height: 700px;
+   margin: 40px auto;
+   overflow: hidden;
+   border: solid 2px #ddd;
+   border-radius: 40px;
+   position: relative;
+}
+.img-sobre{
+   display: flex;
+   transition: transform 0.5s ease-in-out;
+   
+    }
+
+
+.img-itens{
+   min-width: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 30px;
+   
+   border: solid 2px #ddd;
+     
+     
+   }
+   .img-content{
+      width: 500px;
+      height: 300px;
+      border-radius: 10px;
+   }
+   
+
+
+.voltar-btn, .passar-btn {
+   position: absolute;
+   top: 50%;
+   transform: translateY(-50%);
+   background: rgba(0, 0, 0, 0.5);
+   color: #fff;
+   border: none;
+   padding: 10px;
+   cursor: pointer;
+ }
+ 
+ .voltar-btn {
+   left: 10px;
+ }
+ 
+ .passar-btn {
+   right: 10px;}

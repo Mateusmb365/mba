@@ -78,3 +78,34 @@ function validateForm() {
         const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         return emailRegex.test(email);
     }
+
+ const galleryimg = document.querySelector('.img-sobre');
+ const imgitem = document.querySelectorAll('.img-itens');
+ const passar = document.querySelector('.passar-btn');
+ const voltar = document.querySelector('.voltar-btn');
+
+ let indece = 0;  
+
+ function updategallery() {
+    const transition = -indece * 100;
+    galleryimg.style.transform = `translateX(${transition}%)`;
+ }
+
+ passar.addEventListener('click', () => {
+    if (indece < imgitem.length -1) {
+        indece++;
+    } else {
+        indece = 0; // Volta ao primeiro item
+    }
+    updategallery();
+
+ } );
+
+ voltar.addEventListener('click', () => {
+    if (indece > 0) {
+        indece--;
+    } else {
+        indece = imgitem.length - 1; // Volta ao ultimo item
+    }
+    updategallery();
+ });
