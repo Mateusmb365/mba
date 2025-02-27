@@ -14,7 +14,7 @@ form.onsubmit = function(evento){// quando o form for submetido eu chamo a funca
 }
 */
 
-const form = document.querySelector("form");
+const form = document.querySelector("#form");
 
 form.addEventListener("submit", function(event) {
     event.preventDefault(); // previne o comportamento padrao
@@ -45,7 +45,7 @@ usuarios.push(  {// adiciona o objeto ao array
 console.log(usuarios);
 
 let result = document.querySelector("#result");//exibir os dados
-result.innerHTML += `<p>Nome: ${nome1.value}</p>`;
+result.innerHTML += `<p>Nome: ${nome1}</p>`;
 result.innerHTML += `<p>Sobrenome: ${sobrenome1.value}</p>`;
 result.innerHTML += `<p>Idade: ${idade1.value}</p>`;
 result.innerHTML += `<p>Peso: ${peso1.value}</p>`;
